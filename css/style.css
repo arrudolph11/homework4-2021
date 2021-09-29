@@ -27,58 +27,118 @@ caption{
 body{
   color: #000000;
   font-size: 16px;
+  font-family: 'Andika', sans-serif;
   margin: 1.2em;
+  background-image: url("../images/pigeon-background.JPEG");
+  background-color: #DDDDDD;
+  background-repeat: no-repeat;
   background-size: cover ;
   background-position: center;
+  min-height: 100vh;
+  /* flex-direction: column;
+  display: flex; */
 
   /*Req 1*/
 }
 
+tbody {
+  border: 2px solid #000000;
+  border-bottom-left-radius:50px;
+}
+
 h1{
   color: #c12258;
-  font-size: 2em;
+  font-size: 32px;
+  line-height: 2;
+  text-align: center;
 
   /*Req 2*/
 }
 
 p{
-  
+  padding-top: 15px;
 }
 
 a{
-  
+  font-size: 16px;
+  color: #B21F50;
+  text-decoration-style: wavy;
 }
 
 /*Req 5*/
 /*Add selector and rule here*/
 
 
-
 td{
-  
+  text-align: center;
+  border-top: 2px solid #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
+
 
 
 .colhead{
   color: #FFFFFF;
+  min-width: 125px;
+  padding: 10px;
+  color: #FFFFFF;
+  background-color: #7e0825;
+  text-transform: uppercase;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 
 }
 
 .rowhead{
-
+  border: 2px solid #000000;
 }
 
 
 table{
     border: 5px solid #000000;
+    border-collapse:separate;
+    border-radius:50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border: 2px solid #000000;
+  border-top-left-radius:50px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+
+thead tr:first-child th:nth-child(7){
+  border: 2px solid #000000;
+  border-top-right-radius:50px;
+  border-bottom: 0px;
+  border-left: 0px;
+}
+
+tr:nth-child(1n+2){
+  background: transparent;
+}
+
+tr:nth-child(2n+2){
+  background: #d1d1d1;
+}
+
+
+tr:hover{
+  background-color:#7e0825;
+  opacity: 0.25;
+}
+
 
 /*Add selectors and rules here*/
-
 
 
 footer{
@@ -86,4 +146,6 @@ footer{
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+  min-height: 75px;
+  width: 100%;
 }

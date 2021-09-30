@@ -34,17 +34,17 @@ body{
   background-repeat: no-repeat;
   background-size: cover ;
   background-position: center;
-  min-height: 100vh;
-  /* flex-direction: column;
-  display: flex; */
-
-  /*Req 1*/
 }
 
-tbody {
-  border: 2px solid #000000;
-  border-bottom-left-radius:50px;
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius: 50px;
 }
+
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 50px;
+}
+
+
 
 h1{
   color: #c12258;
@@ -62,12 +62,15 @@ p{
 a{
   font-size: 16px;
   color: #B21F50;
+  text-decoration-line: underline;
   text-decoration-style: wavy;
 }
 
 /*Req 5*/
 /*Add selector and rule here*/
-
+*:focus{
+  border: 3px dashed #4147243
+}
 
 td{
   text-align: center;
@@ -85,11 +88,10 @@ td{
   color: #FFFFFF;
   min-width: 125px;
   padding: 10px;
-  color: #FFFFFF;
   background-color: #7e0825;
   text-transform: uppercase;
+  vertical-align: middle;
   text-align: center;
-  display: table-cell;
   vertical-align: middle;
 
 }
@@ -101,7 +103,6 @@ td{
 
 table{
     border: 5px solid #000000;
-    border-collapse:separate;
     border-radius:50px;
     margin-left: auto;
     margin-right: auto;
@@ -133,8 +134,9 @@ tr:nth-child(2n+2){
 
 
 tr:hover{
-  background-color:#7e0825;
-  opacity: 0.25;
+  /* background-color:#7e0825;
+  opacity: 0.25; */
+  background-color: rgb(126,8,37, 0.25);
 }
 
 
@@ -146,6 +148,10 @@ footer{
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
   min-height: 75px;
   width: 100%;
 }
+
